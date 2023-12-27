@@ -1,0 +1,92 @@
+[
+    {
+        "id": "d458f154-8d9d-4715-b719-7b4fb28f7de2",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    {
+        "id": "3fcd0352-c14d-48b5-8591-fa0e25529cb1",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    {
+        "id": "ead77afb-53a0-4e2c-b792-5df10ad154cd",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    {
+        "id": "dabcd40f-a076-4a4d-9e10-6b45a18bfb80",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    {
+        "id": "68341807-71a9-4ff1-b7ab-d50c692586b2",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    {
+        "id": "ba59b248-d30c-4878-a93a-7b3a4a68f8e8",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    {
+        "id": "9a3e74f0-a129-4139-8cf4-0fb81d5f25e5",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": [
+                "assets/main.js"
+            ]
+        }
+    },
+    {
+        "id": "377208cd-7912-4565-995e-5ecfc790bf8c",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    }
+]

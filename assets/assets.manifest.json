@@ -1,0 +1,50 @@
+{
+  "defaults": {
+    "js": {
+      "head": [
+
+      ],
+      "footer": [
+        "assets/defaults/js/jquery-3.2.1.min.js",
+        "assets/defaults/js/popper.min.js",
+        "assets/defaults/js/bootstrap.min.js",
+        "assets/defaults/js/jquery.slimscroll.js",
+        "assets/defaults/js/app.js",
+        "assets/defaults/js/alertdefaults.js"
+      ]
+    },
+    "css":  {
+      "head": [
+        "assets/defaults/css/bootstrap.min.css",
+        "assets/defaults/css/font-awesome.min.css",
+        "assets/defaults/css/style.css",
+        "https://fonts.googleapis.com/icon?family=Material+Icons"
+      ],
+      "footer": []
+    }
+  },
+  "custom": {
+    "js": {
+      "head": [
+
+      ],
+      "footer": [
+        "assets/custom/js/jquery-3.2.1.min.js",
+        "assets/custom/js/popper.min.js",
+        "assets/custom/js/bootstrap.min.js",
+        "assets/custom/js/jquery.slimscroll.js",
+        "assets/custom/js/app.js",
+        "assets/custom/js/alertdefaults.js"
+      ]
+    },
+    "css":  {
+      "head": [
+        "assets/custom/css/bootstrap.min.css",
+        "assets/custom/css/font-awesome.min.css",
+        "assets/custom/css/style.css",
+        "https://fonts.googleapis.com/icon?family=Material+Icons"
+      ],
+      "footer": []
+    }
+  }
+}

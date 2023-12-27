@@ -1,0 +1,42 @@
+[
+    {
+        "controller": "ErrorHandlingSetting",
+        "entry_point": "page",
+        "id": "d458f154-8d9d-4715-b719-7b4fb28f7de2"
+    },
+    {
+        "controller": "StoragesUpdate",
+        "entry_point": "page",
+        "id": "3fcd0352-c14d-48b5-8591-fa0e25529cb1"
+    },
+    {
+        "controller": "FilesSettings",
+        "entry_point": "page",
+        "id": "ead77afb-53a0-4e2c-b792-5df10ad154cd"
+    },
+    {
+        "controller": "EmailSettings",
+        "entry_point": "page",
+        "id": "dabcd40f-a076-4a4d-9e10-6b45a18bfb80"
+    },
+    {
+        "controller": "SiteSettings",
+        "entry_point": "page",
+        "id": "68341807-71a9-4ff1-b7ab-d50c692586b2"
+    },
+    {
+        "controller": "FormSettings",
+        "entry_point": "page",
+        "id": "ba59b248-d30c-4878-a93a-7b3a4a68f8e8"
+    },
+    {
+        "controller": "AuthenticationSettings",
+        "entry_point": "page",
+        "id": "9a3e74f0-a129-4139-8cf4-0fb81d5f25e5"
+    },
+    {
+        "controller": "HomeSetting",
+        "entry_point": "page",
+        "id": "377208cd-7912-4565-995e-5ecfc790bf8c"
+    }
+]

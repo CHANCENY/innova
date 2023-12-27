@@ -1,0 +1,25 @@
+[
+  {
+    "id": "hgghfhdhfhghdhjdfhjjhhg",
+    "head": {
+      "css": [
+        "assets/css/select2.min.css",
+        "assets/css/bootstrap-datetimepicker.min.css"
+      ],
+      "js": [
+
+      ]
+    },
+    "footer": {
+      "css": [
+
+      ],
+      "js": [
+        "assets/js/moment.min.js",
+        "assets/js/select2.min.js",
+        "assets/js/bootstrap-datetimepicker.min.js",
+        "assets/js/initialization.js"
+      ]
+    }
+  }
+]

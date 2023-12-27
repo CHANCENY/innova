@@ -1,0 +1,22 @@
+[
+    {
+        "controller": "FilesManagement",
+        "entry_point": "page",
+        "id": "4fa64020-687e-419e-b01c-4946e2efd827"
+    },
+    {
+        "controller": "FilesUpload",
+        "entry_point": "page",
+        "id": "a9444bbe-65ae-4ef7-b3d2-ad098053a914"
+    },
+    {
+        "controller": "FileDeletions",
+        "entry_point": "page",
+        "id": "9d348293-e624-46c5-9711-308940a4928b"
+    },
+    {
+        "controller": "FileUpdates",
+        "entry_point": "page",
+        "id": "d78b4a51-24d3-4a07-b4d8-aaef982da729"
+    }
+]

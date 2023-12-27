@@ -1,0 +1,8 @@
+# Disable directory listing
+Options -Indexes
+
+# Allow access to CSS, JS, and image files
+<FilesMatch "\.(css|js|jpe?g|png|gif|svg|ico)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

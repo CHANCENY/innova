@@ -1,0 +1,22 @@
+[
+    {
+        "id": "ghghdtuhdhfhghfhdhdhh",
+        "controller": "RoutingCreateController",
+        "entry_point": "routingCreationForm"
+    },
+    {
+        "controller": "RoutesListingBoard",
+        "entry_point": "page",
+        "id": "b5cda536-28cb-4a37-bb51-b910d5deb09e"
+    },
+    {
+        "controller": "RoutingEdit",
+        "entry_point": "page",
+        "id": "7294ff86-3176-46b0-adf5-6b4ea6373404"
+    },
+    {
+        "controller": "RoutingDeletion",
+        "entry_point": "page",
+        "id": "7f35bf6b-e10c-4212-b0f3-f9775d1fd32b"
+    }
+]

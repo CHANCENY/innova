@@ -1,0 +1,22 @@
+[
+    {
+        "id": "hhigigigiggighgfddb",
+        "controller": "DatabaseCreateController",
+        "entry_point": "databaseCreationForm"
+    },
+    {
+        "controller": "StorageCreation",
+        "entry_point": "page",
+        "id": "1bf76089-c851-4154-befd-6630d7e2f25d"
+    },
+    {
+        "controller": "StoragesListing",
+        "entry_point": "page",
+        "id": "12d9a552-95af-4585-a347-8d1339720611"
+    },
+    {
+        "controller": "StorageDeletion",
+        "entry_point": "page",
+        "id": "34f25dd2-5a72-40ea-a528-55bfe6d4f27a"
+    }
+]

@@ -1,0 +1,18 @@
+{
+  "head": {
+    "css": [
+
+    ],
+    "js": [
+
+    ]
+  },
+  "footer": {
+    "css": [
+
+    ],
+    "js": [
+      "assets/js/jquery.slimscroll.js"
+    ]
+  }
+}

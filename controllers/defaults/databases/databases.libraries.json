@@ -1,0 +1,56 @@
+{
+    "head": {
+        "css": [
+            "assets/css/select2.min.css",
+            "assets/css/bootstrap-datetimepicker.min.css"
+        ],
+        "js": []
+    },
+    "footer": {
+        "css": [],
+        "js": [
+            "assets/js/moment.min.js",
+            "assets/js/select2.min.js",
+            "assets/js/bootstrap-datetimepicker.min.js"
+        ]
+    },
+    "0": {
+        "id": "1bf76089-c851-4154-befd-6630d7e2f25d",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [
+                "assets/css/select2.min.css"
+            ],
+            "js": [
+                "assets/js/select2.min.js",
+                "assets/js/moment.min.js",
+                "assets/js/fields_storage.js"
+            ]
+        }
+    },
+    "1": {
+        "id": "12d9a552-95af-4585-a347-8d1339720611",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    },
+    "2": {
+        "id": "34f25dd2-5a72-40ea-a528-55bfe6d4f27a",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    }
+}

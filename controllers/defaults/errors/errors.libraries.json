@@ -1,0 +1,28 @@
+{
+    "head": {
+        "css": [
+            "assets/css/select2.min.css",
+            "assets/css/bootstrap-datetimepicker.min.css"
+        ],
+        "js": []
+    },
+    "footer": {
+        "css": [],
+        "js": [
+            "assets/js/moment.min.js",
+            "assets/js/select2.min.js",
+            "assets/js/bootstrap-datetimepicker.min.js"
+        ]
+    },
+    "0": {
+        "id": "37250ccf-0f4c-4c59-bc7c-0695cdda79cc",
+        "head": {
+            "css": [],
+            "js": []
+        },
+        "footer": {
+            "css": [],
+            "js": []
+        }
+    }
+}

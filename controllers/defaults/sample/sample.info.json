@@ -1,0 +1,12 @@
+[
+    {
+        "controller": "Sample",
+        "entry_point": "page",
+        "id": "71bc2286-127c-46c2-ac07-fdc05fd64223"
+    },
+    {
+        "controller": "SampleTwo",
+        "entry_point": "page",
+        "id": "d3f72b8e-19b7-4aa5-bdf9-d30c505b36c1"
+    }
+]

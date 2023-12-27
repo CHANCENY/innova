@@ -1,0 +1,12 @@
+[
+    {
+        "id": "hhigiiuuhggigiggighgfddb",
+        "controller": "ErrorsController",
+        "entry_point": "errors"
+    },
+    {
+        "controller": "Errors",
+        "entry_point": "page",
+        "id": "37250ccf-0f4c-4c59-bc7c-0695cdda79cc"
+    }
+]

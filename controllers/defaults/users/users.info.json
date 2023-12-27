@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ghgfhehrhrlgjgghfhdh",
+        "controller": "UserController",
+        "entry_point": "userInformation"
+    },
+    {
+        "controller": "RegistrationController",
+        "entry_point": "registrationUser",
+        "id": "yhgfhfdhgfhghfghdhdhdhshhshsh"
+    },
+    {
+        "controller": "UserLoginController",
+        "entry_point": "userLoginForm",
+        "id": "dddd-hhh-rrrt-ottghffjfj"
+    },
+    {
+        "controller": "UserEdit",
+        "entry_point": "page",
+        "id": "e0c1b1a6-97ee-4e21-8a1b-3a675422218d"
+    },
+    {
+        "controller": "UserOut",
+        "entry_point": "page",
+        "id": "815be312-2a36-4aac-8670-b4c82b3cf048"
+    },
+    {
+        "controller": "ResetPassword",
+        "entry_point": "page",
+        "id": "a90d6f4d-81da-4f8a-8448-1f56a9849443"
+    },
+    {
+        "controller": "ResetPasswordTokenLink",
+        "entry_point": "page",
+        "id": "9cce1aa8-83db-4172-86e2-7c2d41d1dbed"
+    },
+    {
+        "controller": "ProfileDeletion",
+        "entry_point": "page",
+        "id": "cfe5ed70-0417-4a9d-ac88-b1ca1e6dd74a"
+    },
+    {
+        "controller": "UsersListing",
+        "entry_point": "page",
+        "id": "b034d5c3-9a9e-4fcf-a1f9-0de3b6db5f67"
+    },
+    {
+        "controller": "LoginTokens",
+        "entry_point": "page",
+        "id": "765da833-8526-41d8-81cf-4d9442942784"
+    },
+    {
+        "controller": "LoginTokens",
+        "entry_point": "page",
+        "id": "e722fc84-449f-47a0-84c4-8b081037af57"
+    },
+    {
+        "controller": "LoginTokens",
+        "entry_point": "page",
+        "id": "87d8911a-7fde-443d-a6b0-a1b0b25afee9"
+    },
+    {
+        "controller": "OTPVerification",
+        "entry_point": "page",
+        "id": "1e172e1d-b1e6-4a6e-b950-9bbd3217886b"
+    },
+    {
+        "controller": "AppTwoFactorEnabling",
+        "entry_point": "page",
+        "id": "98edbcb1-e8a7-424d-96c2-e02f18c4e9b8"
+    },
+    {
+        "controller": "AuthenticationApp",
+        "entry_point": "page",
+        "id": "4939497e-8643-4eb3-8ae3-60debb54ba6b"
+    }
+]

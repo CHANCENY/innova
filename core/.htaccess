@@ -1,0 +1,17 @@
+# Disable directory listing
+Options -Indexes
+
+# Allow access to CSS, JS, and image files
+<FilesMatch "\.(css|js|jpe?g|png|gif|svg|ico)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Block access to all other files and directories
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
