@@ -1,0 +1,698 @@
+[
+  {
+    "route_name": "User Profile",
+    "route_uri": "/user/(\\d+)",
+    "params": {
+      "keys": [
+        "user_id"
+      ],
+      "options": {
+        "user_id": "required"
+      }
+    },
+    "controller": {
+      "access": [
+        "authenticated",
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select",
+          "update"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "module_path": "controllers/defaults/users",
+      "id": "ghgfhehrhrlgjgghfhdh"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET",
+        "POST"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Route Creator",
+    "route_uri": "/routing/create",
+    "params": {
+      "keys": [],
+      "options": {
+        "user_id": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "update",
+          "insert"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "routes"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\routing\\src",
+      "module_path": "controllers/defaults/routing",
+      "id": "ghghdtuhdhfhghfhdhdhh"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET",
+        "POST"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Access Denied",
+    "route_uri": "/errors/access-denied",
+    "params": {
+      "keys": [],
+      "options": {
+        "user_id": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous",
+        "authenticated",
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          ""
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\errors\\src",
+      "module_path": "controllers/defaults/errors",
+      "id": "hhigiiuuhggigiggighgfddb"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Database Creation",
+    "route_uri": "/database/create",
+    "params": {
+      "keys": [],
+      "options": {
+        "user_id": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "admins",
+        "anonymous"
+      ],
+      "database": {
+        "allowed_query": [
+          "update",
+          "insert",
+          "create"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\databases\\src",
+      "module_path": "controllers/defaults/databases",
+      "id": "hhigigigiggighgfddb"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET",
+        "POST"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Installation",
+    "route_uri": "/innova/installation",
+    "params": {
+      "keys": [],
+      "options": {
+        "user_id": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous"
+      ],
+      "database": {
+        "allowed_query": [
+          "update",
+          "insert"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\installation\\src",
+      "module_path": "controllers/defaults/installation",
+      "id": "ghghdhfhtrdjfhgfhsdhfgoiyy"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Database Tables Initialization",
+    "route_uri": "/database/tables/initialization/(\\d+)",
+    "params": {
+      "keys": [
+        "start_over"
+      ],
+      "options": {
+        "start_over": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous"
+      ],
+      "database": {
+        "allowed_query": [
+          "update",
+          "insert",
+          "create"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\tables_creation\\src",
+      "module_path": "controllers/defaults/tables_creation",
+      "id": "hhhigifgiffhdh"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "User Register",
+    "route_uri": "/users/register",
+    "params": {
+      "keys": [],
+      "options": {
+        "start_over": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous",
+        "admins",
+        "authenticated"
+      ],
+      "database": {
+        "allowed_query": [
+          "INSERT",
+          "select",
+          "UPDATE"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "users",
+          "floor_user"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "module_path": "controllers/defaults/users",
+      "id": "yhgfhfdhgfhghfghdhdhdhshhshsh"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET",
+        "POST"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Home",
+    "route_uri": "/home",
+    "params": {
+      "keys": [],
+      "options": {
+        "start_over": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous",
+        "admins",
+        "authenticated"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "namespace": "Innova\\Controller\\Custom\\homepage\\src",
+      "module_path": "controllers/custom/homepage",
+      "id": "gfhghrutud-yjgjfjdjd-tireghdhd"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Sign In",
+    "route_uri": "/users/sign-in",
+    "params": {
+      "keys": [],
+      "options": {
+        "start_over": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "module_path": "controllers/defaults/users",
+      "id": "dddd-hhh-rrrt-ottghffjfj"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET",
+        "POST"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Innova Dashboard",
+    "route_uri": "/innova/dashboard",
+    "params": {
+      "keys": [],
+      "options": {
+        "user_id": ""
+      }
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": true,
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "namespace": "Innova\\Controller\\routers\\dashboard\\src",
+      "module_path": "controllers/defaults/dashboard",
+      "id": "dddd-hhh-rrrt-ottghffjfjssff"
+    },
+    "headers": {
+      "content-type": "text/html",
+      "method": [
+        "GET"
+      ],
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "User Edit",
+    "route_uri": "/users/edit/(\\d+)",
+    "params": {
+      "keys": [
+        "uid"
+      ],
+      "options": {
+        "uid": "required"
+      }
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select",
+          "update"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "module_path": "controllers/defaults/users",
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "id": "e0c1b1a6-97ee-4e21-8a1b-3a675422218d"
+    },
+    "headers": {
+      "method": [
+        "POST",
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Storage Creation",
+    "route_uri": "/storages/storage/create",
+    "params": {
+      "keys": [],
+      "options": []
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select",
+          "insert",
+          "delete",
+          "update",
+          "create",
+          "drop",
+          "show"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "module_path": "controllers/defaults/databases",
+      "namespace": "Innova\\Controller\\routers\\databases\\src",
+      "id": "1bf76089-c851-4154-befd-6630d7e2f25d"
+    },
+    "headers": {
+      "method": [
+        "POST",
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "User Out",
+    "route_uri": "/users/logout/(.*)$",
+    "params": {
+      "keys": [
+        "firstname"
+      ],
+      "options": {
+        "firstname": "required"
+      }
+    },
+    "controller": {
+      "access": [
+        "admins",
+        "authenticated"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "module_path": "controllers/defaults/users",
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "id": "815be312-2a36-4aac-8670-b4c82b3cf048"
+    },
+    "headers": {
+      "method": [
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Routes Listing board",
+    "route_uri": "/routing/listing",
+    "params": {
+      "keys": [],
+      "options": []
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "module_path": "controllers/defaults/routing",
+      "namespace": "Innova\\Controller\\routers\\routing\\src",
+      "id": "b5cda536-28cb-4a37-bb51-b910d5deb09e"
+    },
+    "headers": {
+      "method": [
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Reset Password",
+    "route_uri": "/users/password",
+    "params": {
+      "keys": [],
+      "options": []
+    },
+    "controller": {
+      "access": [
+        "admins",
+        "authenticated",
+        "anonymous"
+      ],
+      "database": {
+        "allowed_query": [
+          "SELECT",
+          "UPDATE"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "module_path": "controllers/defaults/users",
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "id": "a90d6f4d-81da-4f8a-8448-1f56a9849443"
+    },
+    "headers": {
+      "method": [
+        "POST",
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Reset Password Token Link",
+    "route_uri": "/users/password/token/(.*)$",
+    "params": {
+      "keys": [
+        "token"
+      ],
+      "options": {
+        "token": "required"
+      }
+    },
+    "controller": {
+      "access": [
+        "anonymous"
+      ],
+      "database": {
+        "allowed_query": [
+          "select",
+          "update"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "module_path": "controllers/defaults/users",
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "id": "9cce1aa8-83db-4172-86e2-7c2d41d1dbed"
+    },
+    "headers": {
+      "method": [
+        "GET",
+        "POST"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Profile Deletion",
+    "route_uri": "/users/delete/(\\d+)",
+    "params": {
+      "keys": [
+        "uid"
+      ],
+      "options": {
+        "uid": "required"
+      }
+    },
+    "controller": {
+      "access": [
+        "admins",
+        "authenticated"
+      ],
+      "database": {
+        "allowed_query": [
+          "select",
+          "DELETE"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "module_path": "controllers/defaults/users",
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "id": "cfe5ed70-0417-4a9d-ac88-b1ca1e6dd74a"
+    },
+    "headers": {
+      "method": [
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Users Listing",
+    "route_uri": "/users/listing",
+    "params": {
+      "keys": [],
+      "options": []
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "users"
+        ]
+      },
+      "module_path": "controllers/defaults/users",
+      "namespace": "Innova\\Controller\\routers\\users\\src",
+      "id": "b034d5c3-9a9e-4fcf-a1f9-0de3b6db5f67"
+    },
+    "headers": {
+      "method": [
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  },
+  {
+    "route_name": "Routing Edit",
+    "route_uri": "/routing/edit/([^/]+)/([^/]+)$",
+    "params": {
+      "keys": [
+        "id",
+        "name"
+      ],
+      "options": {
+        "id": "required",
+        "name": "required"
+      }
+    },
+    "controller": {
+      "access": [
+        "admins"
+      ],
+      "database": {
+        "allowed_query": [
+          "select"
+        ],
+        "database_connect": "1",
+        "database_tables_allowed": [
+          "all"
+        ]
+      },
+      "module_path": "controllers/defaults/routing",
+      "namespace": "Innova\\Controller\\routers\\routing\\src",
+      "id": "7294ff86-3176-46b0-adf5-6b4ea6373404"
+    },
+    "headers": {
+      "method": [
+        "POST",
+        "GET"
+      ],
+      "content-type": "text/html",
+      "cors": "allowed"
+    }
+  }
+]

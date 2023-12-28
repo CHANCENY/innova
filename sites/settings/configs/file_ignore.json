@@ -1,0 +1,98 @@
+{
+  "js": {
+    "installed": true
+  },
+  "css": {
+    "installed": true
+  },
+  "ttf": {
+    "installed": true
+  },
+  "jpg": {
+    "installed": true
+  },
+  "png": {
+    "installed": true
+  },
+  "jpeg": {
+    "installed": true
+  },
+  "svg": {
+    "installed": true
+  },
+  "otf": {
+    "installed": true
+  },
+  "ai": {
+    "installed": true
+  },
+  "ico": {
+    "installed": true
+  },
+  "webp": {
+    "installed": true
+  },
+  "rss": {
+    "installed": true
+  },
+  "jsp": {
+    "installed": true
+  },
+  "html": {
+    "installed": true
+  },
+  "xls": {
+    "installed": true
+  },
+  "xlsx": {
+    "installed": true
+  },
+  "pdf": {
+    "installed": true
+  },
+  "xlsm": {
+    "installed": true
+  },
+  "mp4": {
+    "installed": true
+  },
+  "mkv": {
+    "installed": true
+  },
+  "mp3": {
+    "installed": true
+  },
+  "webm": {
+    "installed": true
+  },
+  "wmv": {
+    "installed": true
+  },
+  "mpg": {
+    "installed": true
+  },
+  "mpeg": {
+    "installed": true
+  },
+  "3gp": {
+    "installed": true
+  },
+  "avi": {
+    "installed": true
+  },
+  "txt": {
+    "installed": true
+  },
+  "doc": {
+    "installed": true
+  },
+  "docx": {
+    "installed": true
+  },
+  "rft": {
+    "installed": true
+  },
+  "woff": {
+    "installed": true
+  }
+}

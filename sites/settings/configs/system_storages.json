@@ -1,0 +1,252 @@
+[
+    {
+        "table": "users",
+        "columns": {
+            "uid": [
+                "number",
+                "primary key",
+                "unique",
+                "auto_increment"
+            ],
+            "firstname": [
+                "short text",
+                "not empty"
+            ],
+            "lastname": [
+                "short text",
+                "not empty"
+            ],
+            "mail": [
+                "short text",
+                "not empty"
+            ],
+            "password": [
+                "long text",
+                "not empty"
+            ],
+            "phone": [
+                "short text",
+                "empty"
+            ],
+            "username": [
+                "short text",
+                "not empty"
+            ],
+            "overview": [
+                "long text",
+                "empty"
+            ],
+            "birthday": [
+                "short text",
+                "empty"
+            ],
+            "address": [
+                "short text",
+                "empty"
+            ],
+            "verified": [
+                "short",
+                "empty"
+            ],
+            "blocked": [
+                "short",
+                "empty"
+            ],
+            "image": [
+                "file large",
+                "empty"
+            ],
+            "roles": [
+                "long text",
+                "not empty"
+            ]
+        },
+        "indexes": {
+            "uid": "idx_uid"
+        },
+        "install": true
+    },
+    {
+        "table": "floor_user",
+        "columns": {
+            "attempt_uid": [
+                "number",
+                "primary key",
+                "unique",
+                "auto_increment"
+            ],
+            "username": [
+                "short text",
+                "empty"
+            ],
+            "mail": [
+                "short text",
+                "empty"
+            ]
+        },
+        "indexes": {
+            "uid": "idx_attempt_uid"
+        },
+        "install": true
+    },
+    {
+        "table": "sampling_four",
+        "columns": {
+            "id": [
+                "number",
+                "primary key",
+                "auto_increment"
+            ],
+            "name": [
+                "short text",
+                "empty"
+            ],
+            "created": [
+                "time create",
+                "on create"
+            ],
+            "changed": [
+                "time update",
+                "on update"
+            ]
+        },
+        "indexes": [
+            {
+                "id": "idx_id"
+            }
+        ],
+        "install": true
+    },
+    {
+        "table": "file_managed",
+        "columns": {
+            "fid": [
+                "number",
+                "primary key",
+                "auto_increment"
+            ],
+            "path": [
+                "long text",
+                "not empty"
+            ],
+            "uri": [
+                "long text",
+                "empty"
+            ],
+            "size": [
+                "number",
+                "empty"
+            ],
+            "extension": [
+                "short text",
+                "empty"
+            ],
+            "width": [
+                "number",
+                "empty"
+            ],
+            "height": [
+                "number",
+                "empty"
+            ],
+            "changed": [
+                "time update",
+                "on update"
+            ],
+            "created": [
+                "time create",
+                "on create"
+            ]
+        },
+        "indexes": [
+            {
+                "fid": "idx_fid"
+            }
+        ],
+        "install": true
+    },
+    {
+        "table": "authentication_app",
+        "columns": {
+            "id": [
+                "number",
+                "primary key",
+                "auto_increment"
+            ],
+            "uid": [
+                "number",
+                "empty"
+            ],
+            "secret_keys": [
+                "long text",
+                "not empty"
+            ],
+            "verified": [
+                "number",
+                "not empty"
+            ]
+        },
+        "indexes": [
+            {
+                "id": "idx_id"
+            }
+        ],
+        "install": true
+    },
+    {
+        "table": "content_Articles",
+        "indexes": {
+            "content_Articles__id": "content_Articles__id_indexes"
+        },
+        "install": true,
+        "columns": {
+            "title": [
+                "short text",
+                "not empty"
+            ],
+            "Category": [
+                "short text",
+                "empty"
+            ],
+            "Body": [
+                "long text",
+                "empty"
+            ],
+            "content_Articles__id": [
+                "number",
+                "primary key",
+                "auto_increment"
+            ]
+        }
+    },
+    {
+        "table": "content_Blogs",
+        "indexes": {
+            "content_Blogs__id": "content_Blogs__id_indexes"
+        },
+        "install": true,
+        "columns": {
+            "title": [
+                "short text",
+                "not empty"
+            ],
+            "Category": [
+                "short text",
+                "empty"
+            ],
+            "Body": [
+                "long text",
+                "empty"
+            ],
+            "Blog_Image": [
+                "number",
+                "empty"
+            ],
+            "content_Blogs__id": [
+                "number",
+                "primary key",
+                "auto_increment"
+            ]
+        }
+    }
+]

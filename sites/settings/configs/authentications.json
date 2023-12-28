@@ -1,0 +1,18 @@
+{
+    "normal": {
+        "view": "user_login/form.php",
+        "isDefault": true,
+        "active": true
+    },
+    "password_less": {
+        "view": "user_login/password_less.php",
+        "isDefault": true,
+        "active": false
+    },
+    "2fa": {
+        "view": "user_login/auth_2fa.php",
+        "isDefault": true,
+        "active": false,
+        "transmission": "app"
+    }
+}
