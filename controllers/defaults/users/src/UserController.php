@@ -17,7 +17,7 @@ class UserController extends Request
         $uid = $this->get('user_id', null);
         $currentUser = new CurrentUser();
         if(!$currentUser->isAdmin() && $uid != $currentUser->id()) {
-            throw new AccessDeniedException();
+            $this->redirection('/errors/access-denied');
         }
         else
         {
