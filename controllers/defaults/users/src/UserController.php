@@ -3,6 +3,7 @@
 namespace Innova\Controller\routers\users\src;
 
 use Innova\Entities\User;
+use Innova\Exceptions\AccessDeniedException;
 use Innova\modules\CurrentUser;
 use Innova\modules\Files;
 use Innova\modules\Messager;
@@ -13,16 +14,23 @@ class UserController extends Request
 {
     public function userInformation(): mixed
     {
-
-        if(empty($this->get("user_id")))
-        {
-            $this->redirection("/");
+        $uid = $this->get('user_id', null);
+        $currentUser = new CurrentUser();
+        if(!$currentUser->isAdmin() && $uid != $currentUser->id()) {
+            throw new AccessDeniedException();
         }
-        $user = User::load($this->get("user_id"));
-        $data['user'] = $user;
-        $data['host'] = $this->httpSchema();
-        $this->updateUserProfile();
-        return TemplatesHandler::view("users/user_profile.php", $data, true);
+        else
+        {
+            if(empty($this->get("user_id")))
+            {
+                $this->redirection("/");
+            }
+            $user = User::load($this->get("user_id"));
+            $data['user'] = $user;
+            $data['host'] = $this->httpSchema();
+            $this->updateUserProfile();
+            return TemplatesHandler::view("users/user_profile.php", $data, true);
+        }
     }
 
     private function updateUserProfile()
