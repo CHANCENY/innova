@@ -85,8 +85,7 @@
                                             <label>Role</label>
                                             <select name="roles" class="select">
                                                 <option>--Select Roles--</option>
-                                                <option value="admins">Admin</option>
-                                                <option value="authenticated">Authenticated</option>
+                                                <?php echo $roles ?? null; ?>
                                             </select>
                                         </div>
                                     </div>

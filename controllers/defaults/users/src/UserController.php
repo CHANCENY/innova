@@ -7,6 +7,7 @@ use Innova\Exceptions\AccessDeniedException;
 use Innova\modules\CurrentUser;
 use Innova\modules\Files;
 use Innova\modules\Messager;
+use Innova\modules\Permissions;
 use Innova\request\Request;
 use Innova\Templates\TemplatesHandler;
 
@@ -28,6 +29,18 @@ class UserController extends Request
             $user = User::load($this->get("user_id"));
             $data['user'] = $user;
             $data['host'] = $this->httpSchema();
+            $all = Permissions::Permission()->roles();
+            $options = "";
+            foreach ($all as $key=>$value) {
+
+                $list = explode(',', $user->roles());
+                if(in_array($value['name'], $list)) {
+                    $options .= "<option value='{$value['name']}' selected>{$value['label']}</option>";
+                }else {
+                    $options .= "<option value='{$value['name']}'>{$value['label']}</option>";
+                }
+            }
+            $data['roles'] = $options;
             $this->updateUserProfile();
             return TemplatesHandler::view("users/user_profile.php", $data, true);
         }

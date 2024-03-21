@@ -96,14 +96,9 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Roles</label>
-                                                <select name="roles[]" multiple class="select"><?php $roles = $user->roles(); $all = ['admins', 'authenticated', 'anonymous']; ?>
-                                                    <option>Select</option><?php foreach ($all as $key): ?>
-                                                    <?php if(str_contains($roles, $key)): ?>
-                                                    <option value="<?php echo $key; ?>" selected><?php echo ucfirst($key); ?></option>
-                                                    <?php else: ?>
-                                                    <option value="<?php echo $key; ?>"><?php echo ucfirst($key); ?></option>
-                                                    <?php endif; ?>
-                                                <?php endforeach; ?></select>
+                                                <select name="roles[]" multiple class="select">
+                                                    <?php echo $roles ?? null; ?>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-6">

@@ -1,0 +1,11 @@
+[
+    {
+        "email": "xxx@gmail.com",
+        "password": "1234",
+        "user": "xxx@gmail.com",
+        "port": null,
+        "smtp": "smtp.gmail.com",
+        "name": "Sample",
+        "reply": null
+    }
+]

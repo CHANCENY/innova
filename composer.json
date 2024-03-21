@@ -31,5 +31,8 @@
             "Innova\\Templates\\": "core/innova/Templates/",
             "Innova\\Controller\\Custom\\": "controllers/custom/"
         }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.0"
     }
 }

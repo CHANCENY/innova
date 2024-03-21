@@ -88,6 +88,7 @@ $currentUser = new \Innova\modules\CurrentUser();
                             <li><a href="<?php echo fullURI('/settings/forms'); ?>"><span><i class="fa fa-lock"></i>Forms Security</span></a></li>
                             <li><a href="<?php echo fullURI('/settings/authentications'); ?>"><span><i class="fa fa-lock"></i>Authentications</span></a></li>
                           <li><a href="<?php echo fullURI('/settings/home'); ?>"><span><i class="fa fa-lock"></i>Home setting</span></a></li>
+                            <li><a href="<?php echo fullURI('/settings/permission'); ?>"><span><i class="fa fa-shield"></i>Permissions</span></a></li>
                         </ul>
                     </li>
                     <li class="submenu">
@@ -97,13 +98,6 @@ $currentUser = new \Innova\modules\CurrentUser();
                             <li><a href="<?php echo fullURI('/files/content/upload'); ?>"><span><i class="fa fa-upload"></i>Upload</span></a></li>
                         </ul>
                     </li>
-                  <li class="submenu">
-                    <a href="#"><i class="fa fa-list"></i> <span> Content Type </span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                      <li><a href="<?php echo fullURI('/type/content/listing'); ?>"><i class="fa fa-list"></i><span>Content Types</span></a></li>
-                      <li><a href="<?php echo fullURI('/files/content/upload'); ?>"><span><i class="fa fa-upload"></i>Upload</span></a></li>
-                    </ul>
-                  </li>
                     <li class="submenu">
                         <a href="#"><i class="fa fa-file-zip-o"></i> <span> Extend </span> <span class="menu-arrow"></span></a>
                         <ul style="display: none;">

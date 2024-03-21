@@ -1594,9 +1594,9 @@
                     "all"
                 ]
             },
-            "module_path": "controllers/defaults/types",
-            "namespace": "Innova\\Controller\\routers\\types\\src",
-            "id": "af4d4877-d53a-4e41-920a-a5f6e3ac5d09"
+            "module_path": "controllers/defaults",
+            "namespace": "Innova\\Controller\\routers\\defaults\\src",
+            "id": "0302c225-108f-46f4-85e5-a2b09a763f64"
         },
         "headers": {
             "method": [

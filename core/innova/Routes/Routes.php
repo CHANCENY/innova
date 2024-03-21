@@ -218,18 +218,17 @@ class Routes
         {
           //response
           $controller->buildHTMLTemplate();
-          header("Content-Type: {$_SERVER['HTTP_CONTENT_TYPE']}");
+          $typeResponse = $this->headers['content-type'] ?? null;
+          header("Content-Type: $typeResponse");
           $content = $controller->getTemplate();
-          if(gettype($content) === "string")
+
+          if(gettype($content) === "string" && $typeResponse === "text/html")
           {
             print_r("<!DOCTYPE html><html lang='en'>". $content . "</html>");
             exit;
           }
-
-          $typeResponse = $this->headers['content-type'] ?? null;
-
           if($typeResponse === "application/json") {
-            echo (new ConfigHandler())->formatter(json_encode($content,JSON_PRETTY_PRINT));
+            echo $content;
             exit;
           }
           print_r($content);
@@ -302,7 +301,7 @@ class Routes
       $contentTypeRequest = $_SERVER['HTTP_CONTENT_TYPE'] ?? null;
       if(empty($contentTypeRequest))
       {
-        $_SERVER['HTTP_CONTENT_TYPE'] = "text/html; charset=utf-8";
+        $_SERVER['HTTP_CONTENT_TYPE'] = $this->headers['content-type'];
       }
 
     }
@@ -313,7 +312,7 @@ class Routes
     $contentTypeRequest = $_SERVER['HTTP_CONTENT_TYPE'] ?? null;
     if($methodRequest === "GET" && empty($contentTypeRequest))
     {
-      $_SERVER['HTTP_CONTENT_TYPE'] = "text/html; charset=utf-8";
+      $_SERVER['HTTP_CONTENT_TYPE'] = $this->headers['content-type'];;
     }
     // Check the 'Origin' header
     $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
@@ -429,6 +428,7 @@ class Routes
   }
 
   private function isBasePath(): void {
+
     $request = new Request();
     $hostname = $request->domain();
     $httpSchema = $request->httpSchema();
@@ -436,10 +436,10 @@ class Routes
     if(!empty($home))
     {
       $home = "/$home/";
-
     }
     if(str_ends_with($httpSchema, $hostname))
     {
+
       $url = "home";
       $currentUser = new CurrentUser();
       $forms = new Forms();
@@ -463,7 +463,8 @@ class Routes
       }
       $url =  trim($url, "/");
       $this->requestURI = "/" .$url;
-      $this->app();
+      $app = new Routes($this->requestURI);
+      $app->app();
     }
   }
 

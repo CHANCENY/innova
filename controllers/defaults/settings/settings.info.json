@@ -38,5 +38,25 @@
         "controller": "HomeSetting",
         "entry_point": "page",
         "id": "377208cd-7912-4565-995e-5ecfc790bf8c"
+    },
+    {
+        "controller": "Permission",
+        "entry_point": "page",
+        "id": "b3c93e13-eadb-4e06-b1f3-258610ec6fa9"
+    },
+    {
+        "controller": "PermissionCreation",
+        "entry_point": "page",
+        "id": "7012a39c-c71f-4962-b036-bbad0610c8b7"
+    },
+    {
+        "controller": "PermissionDelete",
+        "entry_point": "page",
+        "id": "f192988f-17f5-4cde-9290-26c868cb6b51"
+    },
+    {
+        "controller": "PermissionUpdate",
+        "entry_point": "page",
+        "id": "655a55ac-84fe-457f-985c-c4a59538f020"
     }
 ]

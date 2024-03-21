@@ -69,6 +69,7 @@ class Request
 
     public function post($key, $defaults = null): mixed
     {
+        $this->jsonParser();
         if(!empty($_POST[$key]) && gettype($_POST[$key]) !== "array")
         {
             return htmlspecialchars(strip_tags($_POST[$key]));
@@ -99,5 +100,15 @@ class Request
     public function currentURI(): string
     {
         return $_SERVER['REQUEST_URI'];
+    }
+
+    private function jsonParser(): void
+    {
+        $data = json_decode(file_get_contents('php://input'), true);
+        if(!empty($data)) {
+            foreach ($data as $key=>$value) {
+                $_POST[$key] = $value;
+            }
+        }
     }
 }

@@ -1,0 +1,7 @@
+{
+    "dbname": "innova_dbs",
+    "host": "127.0.0.1",
+    "dbPassword": null,
+    "dbUser": "root",
+    "dbType": "mysql"
+}

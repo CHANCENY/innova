@@ -3,7 +3,7 @@
 use Innova\Exceptions\InternalExecption;
 use Innova\Middlewares\AppAuthentication;
 
-function dd(...$data): void
+function ddd(...$data): void
 {
   echo "<pre>";
   print_r($data);

@@ -1,0 +1,46 @@
+[
+    {
+        "label": "Administrator",
+        "name": "admins",
+        "access": [
+            "dashboard_modules",
+            "normal_modules"
+        ],
+        "action_permissions": [
+            "Read",
+            "Write",
+            "Create",
+            "Delete"
+        ]
+    },
+    {
+        "label": "Authenticated",
+        "name": "authenticated",
+        "access": [
+            "normal_modules"
+        ],
+        "action_permissions": [
+            "Read",
+            "Write"
+        ]
+    },
+    {
+        "label": "Anonymous",
+        "name": "anonymous",
+        "action_permissions": [
+            "Read"
+        ]
+    },
+    {
+        "label": "Content creators",
+        "name": "content_creators",
+        "access": [
+            "dashboard_modules"
+        ],
+        "action_permissions": [
+            "Read",
+            "Write",
+            "Create"
+        ]
+    }
+]

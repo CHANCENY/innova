@@ -40,16 +40,10 @@ class UserLoginController
     {
       if($this->loginUser(new Request()))
       {
-        $firstname = (new CurrentUser())->firstname();
+        $currentUser = new CurrentUser();
+        $firstname = $currentUser->firstname();
         Messager::message()->addMessage("Welcome $firstname to @site", ['@site'=>Site::name()]);
-        if((new CurrentUser())->isAdmin())
-        {
-          (new Request())->redirection('/', true);
-        }
-        else
-        {
-          (new Request())->redirection('/');
-        }
+        (new Request())->redirection('/user/'. $currentUser->id(), true);
       }else{
         $data['msg'] = <<<ALERT
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -70,7 +64,8 @@ ALERT;
     if((new Request())->method() === "post" && $this->authMethod->getAuthenticationMethod() === "2fa")
     {
       if($this->loginUser(new Request())) {
-        (new Request())->redirection("/");
+        $currentUser = new CurrentUser();
+        (new Request())->redirection("/user/". $currentUser->id());
       }
     }
 
@@ -81,7 +76,6 @@ ALERT;
   {
     Forms::login($request->post("username"), $request->post("password"));
     $currentUser = new CurrentUser();
-
     if(!empty($currentUser->id()))
     {
       if($this->authMethod->getAuthenticationMethod() === "2fa") {
@@ -95,7 +89,9 @@ ALERT;
         }
       }
     }
+
     Session::clear("user", "private");
+
     if($this->authMethod->getAuthenticationMethod() === "normal") {
       return Forms::login($request->post("username"), $request->post("password"));
     }

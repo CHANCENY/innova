@@ -1,6 +1,6 @@
 [
     {
-        "id": "42119dda-4f5c-4ab4-b84d-5b439fe97c92",
+        "id": "af4d4877-d53a-4e41-920a-a5f6e3ac5d09",
         "head": {
             "css": [],
             "js": []
@@ -8,36 +8,6 @@
         "footer": {
             "css": [],
             "js": []
-        }
-    },
-    {
-        "id": "c0d56196-5b79-4d72-bae9-0c41daf150a9",
-        "head": {
-            "css": [
-               "assets/css/select2.min.css"
-            ],
-            "js": []
-        },
-        "footer": {
-            "css": [],
-            "js": [
-                "assets/js/select2.min.js"
-            ]
-        }
-    },
-    {
-        "id": "e8156f83-4d14-436e-927c-a7bcb75818ee",
-        "head": {
-            "css": [
-                "assets/css/select2.min.css"
-            ],
-            "js": []
-        },
-        "footer": {
-            "css": [],
-            "js": [
-                "assets/js/select2.min.js"
-            ]
         }
     }
 ]
